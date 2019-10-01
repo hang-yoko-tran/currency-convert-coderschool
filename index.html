@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Currency Converter
+    </h1>
+    <select id="from-currency">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+        <option value="EUR">EUR</option>
+        <option value="KRW">KRW</option>
+      </select>
+      <select id="to-currency">
+        <option value="VND">USD</option>
+        <option value="KRW">VND</option>
+        <option value="USD">EUR</option>
+        <option value="EUR">KRW</option>
+      </select>
+    
+    <input id="amount" type="number">
+    <button class="button" onclick="convertCurrency()">
+        Convert Currency
+    </button>
+    <span id="result"></span>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
