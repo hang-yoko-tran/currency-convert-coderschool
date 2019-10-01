@@ -1,0 +1,45 @@
+*{
+    font-family: Poppins;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.all-elements{
+    background-color:whitesmoke;
+    width: 700px;
+    height: 550px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 80px;
+}
+
+.input{
+    margin-top: 0px;
+    width: 200px;
+    height: 32px;
+}
+
+.button{
+    margin-top: 30px;
+}
+
+header{
+    margin-top: 30px;
+}
+
+h4{
+    color: grey;
+}
+
+#result{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.converted-result{
+    margin-top: 30px;
+}
+

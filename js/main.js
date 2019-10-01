@@ -3,8 +3,6 @@ async function getConvertedValue(conversion, amount) {
 	const api = `https://free.currencyconverterapi.com/api/v6/convert?q=${conversion}&compact=y&apiKey=${apiKey}`;
 	const json = await fetch(api);
 	const result = await json.json();
-	console.log(result[conversion].val);
-	console.log(amount);
 	return amount * result[conversion].val;
 }
 
@@ -19,7 +17,7 @@ function formatCurrency(type, value) {
 async function convertCurrency() {
 	const fromCurrency = document.getElementById('from-currency').value;
 	const toCurrency = document.getElementById('to-currency').value;
-	const amount = document.getElementsByTagName('input')[0].value;
+  const amount = document.getElementsByTagName('input')[0].value;
 	const convertedValue = await getConvertedValue(`${fromCurrency}_${toCurrency}`, amount);
 	document.getElementById('result').innerHTML = formatCurrency(toCurrency, convertedValue);
 }
